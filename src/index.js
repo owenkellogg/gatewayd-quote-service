@@ -1,7 +1,10 @@
 var express    = require('express');
 var Controller = require('./controller');
 
-var controller = new Controller();
+var controller = new Controller({
+  domain: 'america-bank-a.gatewayd.org'
+});
+
 var get        = controller.get.bind(controller);
 var index      = controller.index.bind(controller);
 

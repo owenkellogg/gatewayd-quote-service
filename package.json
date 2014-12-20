@@ -4,10 +4,14 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp",
+    "test": "npm run build",
+    "start": "npm run build && node build"
   },
   "dependencies": {
-    "express": "^4.10.6"
+    "express": "^4.10.6",
+    "gulp": "^3.8.10",
+    "gulp-6to5": "^1.0.2"
   },
   "author": "",
   "license": "ISC"
